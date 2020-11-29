@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a food order landing page on Camp Food's website. It was created with tailwindCss and javascript."
+    />
+    <meta name="robots" content="index,follow" />
+    <title>Camp Food</title>
+    <link rel="stylesheet" href="styles.css " />
+    <link rel="icon" href="/public/images/catering_food_dinner_20584.ico" />
+  </head>
+  <body class="text-gray-600 overscroll-auto  text-base ">
+    <section class="grid md:grid-cols-3">
+      <!-- content wrapper -->
+
+      <div
+        class="md:col-span-1 md:flex md:justify-end imgSet"
+        style="background-image: url(/public/images/bg-image.jpeg)"
+      >
+        <nav class="text-right relative">
+          <div
+            class="flex justify-between items-center md:border-none w-full md:bg-transparent"
+          >
+            <h1 class="font-bold uppercase border-gray-100  text-2xl text-white">
+              <a href="/">Camp <span class="text-primary">Food</span> </a>
+            </h1>
+            <div class="px-4 cursor-pointer md:hidden text-black" id="burger">
+              <svg
+                class="w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-gray-700 font-bold py-1">
+              <a
+                class="flex px-4 justify-end border-r-4 border-primary text-primary md:text-white font-extrabold "
+                href="#"
+                ><span>Home</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  /></svg
+              ></a>
+            </li>
+            <li class="py-1">
+              <a
+                class="flex px-4 justify-end border-r-4 border-white text-primary md:text-white font-extrabold"
+                href="#"
+                ><span>About</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a
+                class="flex px-4 justify-end border-r-4 border-white text-primary md:text-white font-extrabold"
+                href="#"
+                ><span>Contact </span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- nav div ends here  -->
+
+      <!-- main section begins here -->
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2 min-h-screen">
+        <div class="flex sm:justify-center md:justify-end">
+          <a
+            class="btn text-primary border-primary md:border hover:bg-primary hover:text-white ease-in-out duration-500"
+            href="#"
+            >Log in</a
+          >
+          <a
+            class="btn text-primary ml-6 border-primary md:border hover:bg-primary hover:text-white ease-in-out duration-500"
+            href="#"
+            >Sign up</a
+          >
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For Icons</h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <!-- cards go here  -->
+            <div
+              class="card hover:shadow-lg transform hover:-translate-y-1 hover:scale-125 transition duration-500 ease-in-out"
+            >
+              <img
+                class="object-cover w-full h-32"
+                src="./images/waffles.jpeg"
+                alt="waffles"
+              />
+              <div class="m-4">
+                <span class="font-bold">waffles with strawberry </span>
+                <span class="block text-gray-500 text-sm"
+                  >Recipe by Codeliter</span
+                >
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="">25 mins</span>
+              </div>
+            </div>
+
+            <div
+              class="card hover:shadow-lg transform hover:-translate-y-1 hover:scale-125 transition duration-500 ease-in-out"
+            >
+              <img
+                class="object-cover w-full h-32"
+                src="./images/meals.jpeg"
+                alt="meals"
+              />
+              <div class="m-4">
+                <span class="font-bold">tomato soup with lettuce </span>
+                <span class="block text-gray-500 text-sm"
+                  >Recipe by Johnson</span
+                >
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="">25 mins</span>
+              </div>
+            </div>
+
+            <div
+              class="card hover:shadow-lg transform hover:-translate-y-1 hover:scale-125 transition duration-500 ease-in-out"
+            >
+              <img
+                class="object-cover w-full h-32"
+                src="./images/drinks.jpeg"
+                alt="drinks"
+              />
+              <div class="m-4">
+                <span class="font-bold">hamburger with chips and ketchup</span>
+                <span class="block text-gray-500 text-sm"
+                  >Recipe by Trincao</span
+                >
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="">25 mins</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Most popular ones
+          </h4>
+          <div class="mt-8">
+            <!-- cards go here  -->
+          </div>
+          <div class="flex justify-center transition ease-in-out duration-300">
+            <div
+              class="transition duration-500 ease-in-out btn bg-secondary-100 text-black hover:shadow-inner transform hover:-translate-y-1 hover:scale-125"
+            >
+              load more
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- SCRIPT SECTION -->
+
+    <!-- anime js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js"
+      integrity="sha512-rBvJrSgappbpVQiWJabYgWL32JOqZbhh4cxtj3iWEKx7yVS/h6c2r4q4pwp5AIcF5yvCQzbo+GPwelUjfxaG7Q=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/public/app.js"></script>
+  </body>
+</html>
